@@ -1,12 +1,8 @@
 "use client"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
-  const [count, setCount] = useState();
-  useEffect(() => {
-    localStorage.setItem('COUNT', 0)
-  }, [])
-  
+  const [count, setCount] = useState(0);
   return (
     <div className="text-center">
       <h1 className="dispaly-1 fw-bold text-primary">Prisma and Postgresql</h1>
